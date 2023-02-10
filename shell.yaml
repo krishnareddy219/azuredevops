@@ -5,6 +5,6 @@ trigger:
   - master
 
 jobs:
-  -job:
-   steps:
-     - script: ./hello.sh
+  - job:
+    steps:
+      - script: ./hello.sh
