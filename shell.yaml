@@ -1,0 +1,10 @@
+pool: 
+  vmImage: ubuntu-latest
+
+trigger:
+  - master
+
+jobs:
+  -job:
+   steps:
+     - script: ./hello.sh
