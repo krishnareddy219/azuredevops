@@ -5,7 +5,7 @@ trigger:
   - master
 
 stages:
-  - stage: build_mac 
+  - stage: buildmac 
     jobs:
       - job: print numbers
         steps:
