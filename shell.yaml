@@ -7,4 +7,6 @@ trigger:
 jobs:
   - job: simpleshell 
     steps:
-      - script: echo hello
+      - script: sudo df -h 
+      - script: echo krishnareddy
+      - script: sudo apt update
