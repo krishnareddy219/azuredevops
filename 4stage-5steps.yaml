@@ -1,0 +1,16 @@
+pool:
+  vmImage: ubuntu-latest
+
+trigger:
+  - master
+
+stages:
+  - stage: build_mac 
+    jobs:
+      - job: print numbers
+        steps:
+          - script: echo 1
+          - script: echo 2
+          - script: echo 3
+          - script: echo 4
+          - script: echo 5    
