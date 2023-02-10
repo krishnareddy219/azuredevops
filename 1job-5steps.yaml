@@ -11,4 +11,4 @@ jobs:
       - script: echo IAM 
       - script: echo krishna
       - script: echo reddy
-      - scrpit: echo from vizag
+      - script: echo from vizag
