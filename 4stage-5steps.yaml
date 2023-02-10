@@ -5,12 +5,43 @@ trigger:
   - master
 
 stages:
-  - stage: build_mac 
+  - stage: buildmac 
     jobs:
-      - job: print numbers
+      - job: printnumbers
         steps:
           - script: echo 1
           - script: echo 2
           - script: echo 3
           - script: echo 4
-          - script: echo 5    
+          - script: echo 5
+
+  - stage: buildlinux 
+    jobs:
+      - job: printnumbers
+        steps:
+          - script: echo 1
+          - script: echo 2
+          - script: echo 3
+          - script: echo 4
+          - script: echo 5
+    
+  - stage: buildwin
+    jobs:
+      - job: printnumbers
+        steps:
+          - script: echo 1
+          - script: echo 2
+          - script: echo 3
+          - script: echo 4
+          - script: echo 5
+  - stage: buildunix 
+    jobs:
+      - job: printnumbers
+        steps:
+          - script: echo 1
+          - script: echo 2
+          - script: echo 3
+          - script: echo 4
+          - script: echo 5
+            
+      
