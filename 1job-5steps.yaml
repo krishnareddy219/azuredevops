@@ -1,0 +1,14 @@
+pool:
+  vmImage: ubuntu-latest
+
+trigger:
+  - master
+
+jobs:
+  - job: printnames 
+    steps:
+      - script: echo HI 
+      - script: echo IAM 
+      - script: echo krishna
+      - script: echo reddy
+      - scrpit: echo from vizag
