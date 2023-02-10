@@ -5,6 +5,6 @@ trigger:
   - master
 
 jobs:
-  - job:
+  - job: simpleshell 
     steps:
-      - script: ./hello.sh
+      - script: echo hello
