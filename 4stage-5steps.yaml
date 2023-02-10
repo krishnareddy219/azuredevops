@@ -7,7 +7,7 @@ trigger:
 stages:
   - stage: buildmac 
     jobs:
-      - job: print numbers
+      - job: printnumbers
         steps:
           - script: echo 1
           - script: echo 2
