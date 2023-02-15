@@ -1,0 +1,10 @@
+pool: default
+
+trigger: 
+  - master 
+
+steps:
+  - script: ansible -i host -m ping localhost
+  - script: ansibleble-playbook -i host java17.yaml
+ 
+    
