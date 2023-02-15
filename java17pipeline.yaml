@@ -5,7 +5,6 @@ trigger:
   - azuredevops 
 
 steps:
-  - script: ansible -i host -m ping localhost
   - script: ansible-playbook -i host java17.yaml
  
     
