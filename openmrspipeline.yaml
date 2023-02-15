@@ -1,0 +1,12 @@
+pool: 
+  name: ubuntu-latest
+trigger: 
+  - master
+steps:
+  - task: Maven@3
+    inputs:
+      mavenPOMFile: 'pom.xml'
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      javaHomeOption: '1.11'
+      goals: ' clean package'
+      mavenDirectory: /openmrs-core
