@@ -2,7 +2,7 @@ pool:
   name: default
 
 trigger: 
-  - master 
+  - azuredevops 
 
 steps:
   - script: ansible -i host -m ping localhost
