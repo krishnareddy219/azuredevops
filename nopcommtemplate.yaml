@@ -1,0 +1,19 @@
+parameters:
+  - name: restore 
+    displayName: nop restore 
+    type: string
+    default: restore 
+  - name: build 
+    displayName: nop build 
+    type: string
+    default: build 
+      
+
+steps:
+- task: DotNetCoreCLI@1
+  inputs:
+    command: "${{ parameters.restore }}"
+- task: DotNetCoreCLI@1
+  inputs:
+    command: "${{ parameters.build }}"
+

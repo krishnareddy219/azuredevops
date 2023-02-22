@@ -1,0 +1,25 @@
+parameters:
+  - name: npminstall
+    displayName: npm installation
+    type: string
+    default: install 
+    values:
+      - install
+      - run build 
+  - name: npmbuild 
+    displayName: npm build
+    type: string
+    default: run build 
+    values:
+      - install
+      - run build
+
+steps:
+  - task: Npm@1
+    inputs:
+      command: "${{ prameters.npminstall }}"
+  - task: Npm@1
+    inputs:
+      command: 'custom'
+      customCommand: "${{ parameters.npmbuild }}"
+ 
